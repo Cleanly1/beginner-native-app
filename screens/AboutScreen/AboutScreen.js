@@ -23,7 +23,7 @@ export default function AboutScreen({ navigation }) {
 	return (
 		<ScrollView>
 			<View style={styles.wrapper}>
-				<Images source={TestImage} />
+				<Images source={TestImage} style={styles.image} />
 				<View style={styles.textWrapper}>
 					<Text style={styles.text}>This Is The Story About Us</Text>
 					<Text>This is an very simple app</Text>

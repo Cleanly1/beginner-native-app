@@ -2,6 +2,8 @@ import React from "react";
 import HomeScreen from "./screens/HomeScreen/HomeScreen";
 import AboutScreen from "./screens/AboutScreen/AboutScreen";
 import ModalScreen from "./screens/ModalScreen/ModalScreen";
+import ImagePickerScreen from "./screens/ImagePickerScreen/ImagePickerScreen";
+import CameraScreen from "./screens/CameraScreen/CameraScreen";
 import { Platform } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -24,6 +26,40 @@ function MainStackScreen() {
 			<MainStack.Screen
 				name="About"
 				component={AboutScreen}
+				options={{
+					headerTitleAlign: "center",
+					headerLeft:
+						Platform.OS === "ios"
+							? ({ navigation }) => (
+									<HeaderBackButton
+										onPress={() => {
+											navigation.goBack();
+										}}
+									></HeaderBackButton>
+							  )
+							: null,
+				}}
+			/>
+			<MainStack.Screen
+				name="Google Image Guesser"
+				component={ImagePickerScreen}
+				options={{
+					headerTitleAlign: "center",
+					headerLeft:
+						Platform.OS === "ios"
+							? ({ navigation }) => (
+									<HeaderBackButton
+										onPress={() => {
+											navigation.goBack();
+										}}
+									></HeaderBackButton>
+							  )
+							: null,
+				}}
+			/>
+			<MainStack.Screen
+				name="Camera"
+				component={CameraScreen}
 				options={{
 					headerTitleAlign: "center",
 					headerLeft:

@@ -14,29 +14,10 @@ const styles = StyleSheet.create({
 		overflow: "scroll",
 	},
 
+	camera: { height: deviceHeight - deviceHeight * 0.3, width: deviceWidth },
 	textWrapper: {
 		justifyContent: "center",
 		alignItems: "center",
-	},
-
-	text: {
-		fontSize: 24,
-		padding: 5,
-	},
-
-	quoteText: {
-		flex: 0.7,
-		margin: 10,
-		textAlign: "center",
-	},
-
-	navButton: {
-		margin: 10,
-	},
-	image: {
-		width: 200,
-		height: 200,
-		resizeMode: "contain",
 	},
 });
 

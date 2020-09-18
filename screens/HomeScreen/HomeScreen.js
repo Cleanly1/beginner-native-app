@@ -41,8 +41,18 @@ export default function HomeScreen({ navigation }) {
 				/>
 				<Button
 					style={styles.navButton}
+					onPress={() => navigation.navigate("Google Image Guesser")}
+					text="Google Image Guess"
+				/>
+				<Button
+					style={styles.navButton}
 					onPress={() => navigation.navigate("Cat Fact")}
 					text="To Cat Facts"
+				/>
+				<Button
+					style={styles.navButton}
+					onPress={() => navigation.navigate("Camera")}
+					text="To Camera"
 				/>
 			</View>
 		</ScrollView>

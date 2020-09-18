@@ -23,16 +23,35 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		padding: 5,
 	},
-
-	quoteText: {
-		flex: 0.7,
-		margin: 10,
-		textAlign: "center",
+	nameText: {
+		fontSize: 16,
 	},
 
-	navButton: {
-		margin: 10,
+	scoreText: {
+		fontSize: 16,
+		marginBottom: 10,
 	},
+
+	button: {
+		elevation: 3,
+		shadowColor: "#54282A",
+		shadowOffset: {
+			width: 4,
+			height: 4,
+		},
+		shadowOpacity: 0.75,
+		shadowRadius: 3,
+	},
+
+	imgWrapper: {
+		width: 300,
+		height: 200,
+		margin: 10,
+		justifyContent: "center",
+		alignItems: "center",
+		overflow: "hidden",
+	},
+
 	image: {
 		width: 200,
 		height: 200,
