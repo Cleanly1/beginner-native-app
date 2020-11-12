@@ -6,7 +6,6 @@ const deviceHeight = Dimensions.get("window").height;
 const styles = StyleSheet.create({
 	wrapper: {
 		flex: 1,
-		backgroundColor: "#fff",
 		width: deviceWidth,
 		justifyContent: "center",
 		alignItems: "center",
